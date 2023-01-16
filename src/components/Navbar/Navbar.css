@@ -1,14 +1,17 @@
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .navbar{
     width: 90%;
     height: 50px;
     margin: auto;
-    position: sticky;
-    top: 0;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
-    z-index: 100;
 }
 
 .nav-items{
