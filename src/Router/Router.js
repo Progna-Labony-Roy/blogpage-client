@@ -6,6 +6,7 @@ import AddBlog from "../Pages/AddBlog/AddBlog";
 import Contact from "../Pages/Contact/Contact";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import PriveteRoute from "./PriveteRoute";
 
 export const routes=createBrowserRouter([
     {
@@ -22,7 +23,7 @@ export const routes=createBrowserRouter([
             },
             {
                 path:'/addblog',
-                element:<AddBlog></AddBlog>
+                element:<PriveteRoute><AddBlog></AddBlog></PriveteRoute>
             },
             {
                 path:'/login',
