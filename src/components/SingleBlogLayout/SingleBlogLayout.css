@@ -1,0 +1,22 @@
+.single-layout{
+    margin-top: 30px;
+    display: flex;
+    z-index: 1;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .single-layout{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .single-layout{
+        display: flex;
+        flex-direction: column;
+    }
+}
