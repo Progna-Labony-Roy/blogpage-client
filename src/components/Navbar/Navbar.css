@@ -1,12 +1,8 @@
-.nav{
-    background-color: whitesmoke;
-}
-
 .navbar{
     width: 90%;
     height: 50px;
-    position: sticky;
     margin: auto;
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -51,10 +47,7 @@
     .navbar{
         display: block;
     }
-    .nav{
-        background-color: white;
-    }
-
+   
     .nav-icons{
         display: none;
     }
