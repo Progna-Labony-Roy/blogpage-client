@@ -1,5 +1,5 @@
 .sidebar {
-    flex: 3;
+    flex: 2;
     margin: 20px;
     padding-bottom: 30px;
     background-color: aliceblue;
@@ -7,17 +7,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 480px;
+}
+
+.sidebar:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sidebar-items {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15px;
 }
 
 .title {
-    margin: 10px;
-    padding: 5px;
+    margin: 8px;
+    padding: 3px;
     width: 80%;
     border-top: solid 1px #a7a4a4;
     border-bottom: solid 1px #a7a4a4;
@@ -30,16 +36,23 @@
 }
 
 .sidebar-image {
-    max-width: 280px;
+    max-width: 150px;
 }
 
 .my-info{
     font-size: 12px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .catagory-list{
     font-size: 12px;
+    list-style: none;
+}
+
+.listitem{
+    display: inline-block;
+    width: 50%;
+   margin: 2px 0px;
 }
 
 .sidebar-icons{
@@ -50,14 +63,16 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-    .sidebar-image {
-        max-width: 130px;
+    .my-info{
+        font-size: 12px;
+        padding: 10px 55px;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-    .sidebar-image {
-        max-width: 170px;
+    .my-info{
+        font-size: 12px;
+        padding: 10px 55px;
     }
 }
