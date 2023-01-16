@@ -1,14 +1,11 @@
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home/Home';
-import Navbar from './components/Navbar/Navbar';
-import SingleBlogLayout from './components/SingleBlogLayout/SingleBlogLayout';
-import AddBlog from './Pages/AddBlog/AddBlog';
+import { routes } from './Router/Router';
 
 function App() {
   return (
     <div>
-       <Navbar></Navbar>
-       <AddBlog></AddBlog>
+       <RouterProvider router={routes}></RouterProvider>
     </div>
   );
 }

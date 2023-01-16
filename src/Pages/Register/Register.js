@@ -1,10 +1,21 @@
 import React from 'react';
+import './Register.css'
 
 const Register = () => {
     return (
-        <div>
-            
-        </div>
+        <div className="register">
+      <span className="registerTitle">Register</span>
+      <form className="registerForm">
+        <label>Username</label>
+        <input className="registerInput" type="text" name='name' placeholder="Enter your username..." />
+        <label>Email</label>
+        <input className="registerInput" type="text" name='email' placeholder="Enter your email..." />
+        <label>Password</label>
+        <input className="registerInput" type="password" name='password' placeholder="Enter your password..." />
+        <button className="registerButton">Register</button>
+      </form>
+        <button className="registerLoginButton">Login</button>
+    </div>
     );
 };
 

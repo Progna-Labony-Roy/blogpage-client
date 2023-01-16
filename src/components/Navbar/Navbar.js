@@ -12,14 +12,14 @@ const Navbar = () => {
         <i className="nav-icons fa-brands fa-square-instagram"></i>
       </div>
       <div className="nav-items">
-        <li className="link-items">ABOUT</li>
-        <li className="link-items">CONTACT</li>
-        <li className="link-items">WRITE BLOG</li>
-        <li className="link-items">LOGOUT</li>
+        <Link to='/' className="link-items">HOME</Link>
+        <Link to='/contact' className="link-items">CONTACT</Link>
+        <Link to='/addblog' className="link-items">ADD BLOG</Link>
+        <Link to='' className="link-items">LOGOUT</Link>
       </div>
       <div className="nav-search">
-        <img className="nav-image" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="" />
-      <i className="search-icon fa-solid fa-magnifying-glass"></i>
+      <Link to='/login' className="link-items">LOGIN</Link>
+      <Link to='/register' className="link-items">REGISTER</Link>
       </div>
     </div>
     </div>

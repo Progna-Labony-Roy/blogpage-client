@@ -22,6 +22,7 @@
     list-style: none;
     font-size: medium;
     padding: 0px 10px;
+    text-decoration: none;
     cursor: pointer;
 }
 
