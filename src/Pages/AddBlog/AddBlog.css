@@ -1,0 +1,87 @@
+.add-blog{
+    padding-top: 50px;
+  }
+  
+  .add-Img {
+    margin-left: 150px;
+    width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .add-Form {
+    position: relative;
+  }
+  
+  .add-FormGroup {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-Icon {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    color: rgb(129, 125, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .add-Input {
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+  }
+  
+  .add-Input::placeholder {
+    color: rgb(189, 185, 185);
+    font-weight: 400;
+  }
+  
+  .add-Input:focus {
+    outline-style: none;
+  }
+  
+  .add-Text {
+    width: 70vw;
+    height: 100vh;
+    font-family: inherit;
+    font-size: 20px;
+  }
+  
+  .add-Submit {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .add-Img{
+        margin: 0% 15%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .add-Img{
+        margin: 0% 15%;
+    }
+}
