@@ -40,6 +40,12 @@
   font-weight: 900;
   margin-top: 15px;
   cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.blog-title:hover{
+    text-decoration:underline;
 }
 
 .posting-date{

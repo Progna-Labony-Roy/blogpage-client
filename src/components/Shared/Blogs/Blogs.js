@@ -1,17 +1,30 @@
 import React from 'react';
+import { useQuery } from 'react-query';
+import { useLoaderData } from 'react-router-dom';
 import Blog from '../Blog/Blog';
 import './Blogs.css'
 
 const Blogs = () => {
+
+    const { data: blogs =[] ,isLoading } = useQuery({
+        queryKey: ['blogs'],
+        queryFn: async () => {
+          const result = await fetch("http://localhost:5000/blogs");
+          const data = await result.json();
+          return data;
+        },
+      });
+      
+      if(isLoading){
+        return <>Loading...</>
+      }
+      
     return (
         <div className='blogs'>
-            <Blog></Blog>
-            <Blog></Blog>
-            <Blog></Blog>
-            <Blog></Blog>
-            <Blog></Blog>
-            <Blog></Blog>
-            <Blog></Blog>
+            {
+                blogs?.length && 
+                blogs.map((blog)=> (<Blog blog={blog} key={blog._id}></Blog>))
+            }
         </div>
     );
 };

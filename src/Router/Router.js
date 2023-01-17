@@ -1,12 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../components/Home/Home";
 import Main from "../components/Layout/Main";
-import About from "../Pages/About/About";
+import Blogs from "../components/Shared/Blogs/Blogs";
 import AddBlog from "../Pages/AddBlog/AddBlog";
 import Contact from "../Pages/Contact/Contact";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PriveteRoute from "./PriveteRoute";
+import SingleBlog from "../components/SingleBlog/SingleBlog";
 
 export const routes=createBrowserRouter([
     {
@@ -16,6 +17,16 @@ export const routes=createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>
+            },
+            {
+                path:'/',
+                element:<Blogs></Blogs>,
+                loader: ()=> fetch("http://localhost:5000/blogs")
+            },
+            {
+                path:'/blog/:id',
+                element:<SingleBlog></SingleBlog>,
+                loader: ({params})=> fetch(`http://localhost:5000/blog/${params.id}`)
             },
             {
                 path:'/contact',

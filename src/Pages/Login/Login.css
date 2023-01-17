@@ -59,3 +59,8 @@
     color: white;
     border-radius: 10px;
   }
+
+  .text-danger{
+    color: red;
+    margin-top: 10px;
+  }

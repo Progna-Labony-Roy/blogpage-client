@@ -1,20 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Blog.css'
 
-const Blog = () => {
+const Blog = ({blog}) => {
+    const {_id,image_url,title,details,author}=blog;
     return (
         <div className='blog'>
-            <img className='blog-img' src="https://images.unsplash.com/photo-1673809758231-d864d9e35307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+            <img className='blog-img' src={image_url} alt="" />
             <div className="blog-info">
-                <div className="blog-names">
+                {/* <div className="blog-names">
                     <span className="blog-name">Music</span>
                     <span className="blog-name">Life</span>
-                </div>
-                <span className='blog-title'>Lorem ipsum, dolor sit amet </span>
+                </div> */}
+                <Link to={`/blog/${_id}`} className='blog-title'>{title}</Link>
                 <hr />
-                <span className='posting-date'>1 hour ago</span>
+                <span className='posting-date'>{author.name}</span>
             </div>
-            <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A debitis omnis quisquam non veniam sunt eos tenetur sed assumenda ratione provident aut, vitae numquam vel voluptatibus adipisci incidunt quam. Labore.</p>
+            <p className="description">{details}</p>
         </div>
     );
 };

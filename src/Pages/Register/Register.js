@@ -1,10 +1,13 @@
 import React, { useContext, useState } from 'react';
+import { toast } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import './Register.css'
 
 const Register = () => {
   const { createUser ,updateUserProfile} = useContext(AuthContext);
   const [error,setError]=useState('');
+  const navigate=useNavigate();
 
 
   const handleSubmit = (event) => {
@@ -19,12 +22,14 @@ const Register = () => {
         const user = result.user;
         console.log(user);
         form.reset();
+        toast.success("Successfully signed up");
+        navigate('/')
         setError('');
         handleUpdateUserProfile(name )
       })
       .catch((error) => {
         console.error(error);
-        setError(error.message)
+        setError(error.message);
       });
   };
 
