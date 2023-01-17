@@ -21,12 +21,12 @@ export const routes=createBrowserRouter([
             {
                 path:'/',
                 element:<Blogs></Blogs>,
-                loader: ()=> fetch("http://localhost:5000/blogs")
+                loader: ()=> fetch("https://blogpage-server.vercel.app/blogs")
             },
             {
                 path:'/blog/:id',
                 element:<SingleBlog></SingleBlog>,
-                loader: ({params})=> fetch(`http://localhost:5000/blog/${params.id}`)
+                loader: ({params})=> fetch(`https://blogpage-server.vercel.app/blog/${params.id}`)
             },
             {
                 path:'/contact',
