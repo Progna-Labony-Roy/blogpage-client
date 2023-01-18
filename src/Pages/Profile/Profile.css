@@ -1,0 +1,45 @@
+.information{
+    width: 60%;
+    margin: auto;
+}
+.my-information{
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.info{
+    font-weight:500;
+}
+
+.social-links{
+    text-decoration: none;
+    color: rgb(93, 48, 228);
+    font-size: small;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-right: 10px;
+}
+
+.social-links:hover{
+    text-decoration: underline;
+}
+
+.socials{
+    margin-top: 10px;
+}
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (max-width: 992px) {
+
+    .information{
+      width: 100%;
+  }
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .information{
+      width: 80%;
+  }
+}

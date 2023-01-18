@@ -39,9 +39,17 @@ const Blog = ({blog, refetch}) => {
                 </div> */}
                 <Link to={`/blog/${_id}`} className='blog-title'>{title}</Link>
                 <hr />
-                <span className='posting-date'>{author.name}</span>
+                <span className='posting-date'> Author : {author.name}</span>
             </div>
-            <p className="description">{details}</p>
+            <p className="details">
+            {details.length > 100 ? (
+              <>
+                {details.slice(0, 100) + "..."}
+              </>
+            ) : (
+              <>{details}</>
+            )}
+            </p>
            <div className="delete">
            <button className='delete-btn' onClick={()=>{handleDeleteBlog(blog)}} >Delete</button>
            </div>
