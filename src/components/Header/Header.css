@@ -1,5 +1,5 @@
 .header{
-    margin-top: 50px;
+    margin-top: 10px;
     z-index: 1;
 }
 
@@ -9,27 +9,20 @@
     align-items: center;
     color: grey;
     font-family: 'Lora', serif;
+    z-index: 50;
 }
 
 .title-sm{
     position: absolute;
-    top: 16%;
-    font-size: 15px;
+    top: 14%;
+    font-size: 20px;
 }
 
 .title-lg{
     position: absolute;
-    top: 17%;
-    font-size: 60px;
+    top: 15%;
+    font-size: 80px;
 }
-
-.header-image{
-    margin-top: 35px;
-    width: 100%;
-    object-fit: cover;
-    height: 460px;
-}
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {

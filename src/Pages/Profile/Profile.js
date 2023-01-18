@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import Contact from "../Contact/Contact";
 import "./Profile.css";
 
@@ -38,9 +39,9 @@ const Profile = () => {
             href="Progna_Labony_Roy_Resume.pdf"
             download="Progna_Labony_Roy_Resume.pdf"
           >
-            <button className="btn btn-outline text-white text-lg mr-5">
+            <Button variant="light">
               Resume
-            </button>
+            </Button>
             </a>
         </div>
        </div>
