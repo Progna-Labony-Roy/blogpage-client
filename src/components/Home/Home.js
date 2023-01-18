@@ -4,10 +4,10 @@ import Shared from '../Shared/Shared';
 import './Home.css'
 const Home = () => {
     return (
-        <>
+        <div>
             <Header></Header>
-            <Shared></Shared>
-        </>
+            <div  className='home'> <Shared></Shared></div>
+        </div>
     );
 };
 
