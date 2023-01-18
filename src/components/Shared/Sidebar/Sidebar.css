@@ -1,6 +1,7 @@
 .sidebar {
     flex: 2;
-    margin: 20px;
+    margin-top: 50px;
+    margin-right: 2%;
     padding-bottom: 30px;
     background-color: aliceblue;
     border-radius: 5px;
@@ -59,18 +60,22 @@
     padding: 0px 5px;
 }
 
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .sidebar {
+        flex: 3;
+    }
     .my-info{
         font-size: 12px;
-        padding: 10px 55px;
+        padding: 10px 20pxpx;
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        margin-right: 0;
+    }
     .my-info{
         font-size: 12px;
         padding: 10px 55px;

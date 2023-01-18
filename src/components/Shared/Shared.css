@@ -4,16 +4,15 @@
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
     .shared{
         display: flex;
-        flex-direction: column;
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
     .shared{
         display: flex;
         flex-direction: column;

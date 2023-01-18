@@ -48,6 +48,18 @@
 }
 
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .link-items{
+        font-size: small;
+        margin: auto;
+    }
+
+    .nav-icons{
+        margin: 0px 0px 0px 20px;
+    }
+}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
@@ -59,17 +71,18 @@
         display: none;
     }
 
-    .link-items{
-        font-size: small;
-        padding: 10px 0px;
-        margin: auto;
+    .nav-items{
+        display: flex;
+        justify-content: center;
     }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
     .link-items{
         font-size: small;
-        margin: auto;
+        margin: 10px 0px;
+    }
+
+    .nav-authentication{
+        display: flex;
+        justify-content: center;
     }
 }

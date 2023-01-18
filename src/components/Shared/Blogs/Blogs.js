@@ -6,7 +6,7 @@ import './Blogs.css'
 
 const Blogs = () => {
 
-    const { data: blogs =[] ,isLoading } = useQuery({
+    const { data: blogs =[] ,isLoading ,refetch} = useQuery({
         queryKey: ['blogs'],
         queryFn: async () => {
           const result = await fetch("https://blogpage-server.vercel.app/blogs");
@@ -23,7 +23,7 @@ const Blogs = () => {
         <div className='blogs'>
             {
                 blogs?.length && 
-                blogs.map((blog)=> (<Blog blog={blog} key={blog._id}></Blog>))
+                blogs.map((blog)=> (<Blog blog={blog} key={blog._id} refetch={refetch}></Blog>))
             }
         </div>
     );

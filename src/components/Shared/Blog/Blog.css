@@ -1,7 +1,7 @@
 .blog{
     width: 265px;
-    margin: 0px 15px 40px ;
-    padding: 2px 10px 40px;
+    margin: 0px 10px 30px ;
+    padding: 2px 10px 0px;
     border: 1px solid whitesmoke;
     border-radius: 5px;
 }
@@ -71,6 +71,24 @@
   -webkit-box-orient: vertical;
 }
 
+
+.delete{
+    display: flex;
+    justify-content: end;
+}
+
+.delete-btn{
+    margin: 10px 0px;
+    padding: 4px 10px;
+    background: aqua;
+    border: 1px solid green;
+    border-radius: 2px;
+    color: grey;
+}
+
+.delete-btn:hover{
+    color:black
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {

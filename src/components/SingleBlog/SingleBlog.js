@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import "./SingleBlog.css";
 
-const SingleBlog = () => {
+const SingleBlog = ({refetch}) => {
   const singleblog= useLoaderData();
   const {_id,image_url,title,details,author}=singleblog;
   console.log(_id);
@@ -27,7 +27,6 @@ const SingleBlog = () => {
       <Link to="/">Home</Link>
       <div>
       <i class="singleBlogIcon fa-regular fa-pen-to-square"></i>
-      <i class="singleBlogIcon fa-solid fa-trash-can"></i>
       </div>
       </div>
       
