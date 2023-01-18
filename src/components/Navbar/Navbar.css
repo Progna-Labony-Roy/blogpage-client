@@ -7,7 +7,6 @@
     width: 90%;
     height: 50px;
     margin: auto;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +64,12 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
     .navbar{
-        display: block;
+        width: 90%;
+        height: 55px;
+        margin: auto;
+        display: flex;
+        justify-content: column;
+        align-items: center;
     }
    
     .nav-icons{
@@ -80,6 +84,7 @@
     .link-items{
         font-size: small;
         margin: 10px 0px;
+        padding: 0px 4px;
     }
 
     .nav-authentication{
