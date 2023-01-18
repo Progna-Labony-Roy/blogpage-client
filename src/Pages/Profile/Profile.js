@@ -34,6 +34,14 @@ const Profile = () => {
         >
           LinkedIn
         </a>
+        <a
+            href="Progna_Labony_Roy_Resume.pdf"
+            download="Progna_Labony_Roy_Resume.pdf"
+          >
+            <button className="btn btn-outline text-white text-lg mr-5">
+              Resume
+            </button>
+            </a>
         </div>
        </div>
       </div>
