@@ -16,9 +16,9 @@ const Navbar = () => {
     <div className="nav">
         <div className="navbar">
       <div className="">
-        <i className="nav-icons fa-brands fa-square-facebook"></i>
-        <i className="nav-icons fa-brands fa-square-pinterest"></i>
-        <i className="nav-icons fa-brands fa-square-instagram"></i>
+        <a target="_blank" className="nav-icons" href="https://www.facebook.com/"><i className="fa-brands fa-square-facebook"></i></a>
+        <a target="_blank" className="nav-icons" href="https://www.pinterest.com/"><i className="fa-brands fa-square-pinterest"></i></a>
+        <a target="_blank" className="nav-icons" href="https://www.instagram.com/"><i className="fa-brands fa-square-instagram"></i></a>
       </div>
       <div className="nav-items">
         <Link to='/' className="link-items">HOME</Link>
